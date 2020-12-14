@@ -1,0 +1,46 @@
+Scenario:
+1. showing empty liked restaurants
+    - Membuka halaman favorite
+    - Menampilkan teks "Its empty in here."
+
+2. liking one restaurant
+    - Membuka halaman favorite
+    - Menampilkan teks "Its empty in here."
+    - Membuka halaman home
+    - Mencari tombol detail (tombol detail yang pertama)
+    - Menekan tombol detail (tombol detail yang pertama)
+    - Membuka halaman detail pertama
+    - Mencari tombol favorite
+    - Menekan tombol favorite
+    - Membuka halaman favorite
+    - Menampilkan data restaurant yang pertama.
+
+3. unliking one restaurant
+    - Membuka halaman favorite
+    - Menampilkan teks "Its empty in here."
+    - Membuka halaman home
+    - Mencari tombol detail (tombol detail yang pertama)
+    - Menekan tombol detail (tombol detail yang pertama)
+    - Membuka halaman detail pertama
+    - Mencari tombol favorite
+    - Menekan tombol favorite
+    - Membuka halaman favorite
+    - Menampilkan data restaurant yang pertama.
+    - Menekan tombol detail restaurant yang pertama.
+    - Mencari tombol unfavorite
+    - Menekan tombol unfavorite
+    - Membuka halaman favorite
+    - Menampilkan teks "Its empty in here."
+
+4. add restaurant review
+    - Membuka halaman favorite
+    - Menampilkan teks "Its empty in here."
+    - Membuka halaman home
+    - Mencari tombol detail (tombol detail yang pertama)
+    - Menekan tombol detail (tombol detail yang pertama)
+    - Membuka halaman detail pertama
+    - Mencari form untuk memberikan review
+    - Menulis nama pada form
+    - Menulis review pada form
+    - Menekan tombol submit
+    - Menapilkan nama dan review yang sesuai dengan yang dimasukkan 

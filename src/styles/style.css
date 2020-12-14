@@ -1,0 +1,35 @@
+/* @import '~@fortawesome/fontawesome-free/css/all.min.css'; */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css';
+@import './header.css';
+@import './main.css';
+@import './loader.css';
+@import './footer.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Abel&family=Gayathri&family=Oxygen&family=PT+Sans&family=Poppins&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f3de;
+}
+
+.skip-link {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    background-color: #31112c;
+    color: white;
+    z-index: 100;
+    margin-left: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 7px;
+    padding: 0.9em;
+}
+
+.skip-link:focus {
+    top: 0;
+}

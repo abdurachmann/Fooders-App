@@ -1,0 +1,41 @@
+.loader {
+    font-size: 15px;
+    margin: 100px auto;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    position: relative;
+    -webkit-animation: loadAnimate 1.5s infinite linear;
+    animation: loadAnimate 1.5s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+@keyframes loadAnimate {
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em #7d0633, 2em -2em 0 0 #7d0633, 3em 0 0 -1em #7d0633, 2em 2em 0 -1em #7d0633, 0 3em 0 -1em #7d0633, -2em 2em 0 -1em #7d0633, -3em 0 0 -1em #7d0633, -2em -2em 0 0 #7d0633;
+    }
+    12.5% {
+        box-shadow: 0 -3em 0 0 #7d0633, 2em -2em 0 0.2em #7d0633, 3em 0 0 0 #7d0633, 2em 2em 0 -1em #7d0633, 0 3em 0 -1em #7d0633, -2em 2em 0 -1em #7d0633, -3em 0 0 -1em #7d0633, -2em -2em 0 -1em #7d0633;
+    }
+    25% {
+        box-shadow: 0 -3em 0 -0.5em #7d0633, 2em -2em 0 0 #7d0633, 3em 0 0 0.2em #7d0633, 2em 2em 0 0 #7d0633, 0 3em 0 -1em #7d0633, -2em 2em 0 -1em #7d0633, -3em 0 0 -1em #7d0633, -2em -2em 0 -1em #7d0633;
+    }
+    37.5% {
+        box-shadow: 0 -3em 0 -1em #7d0633, 2em -2em 0 -1em #7d0633, 3em 0 0 0 #7d0633, 2em 2em 0 0.2em #7d0633, 0 3em 0 0 #7d0633, -2em 2em 0 -1em #7d0633, -3em 0 0 -1em #7d0633, -2em -2em 0 -1em #7d0633;
+    }
+    50% {
+        box-shadow: 0 -3em 0 -1em #7d0633, 2em -2em 0 -1em #7d0633, 3em 0 0 -1em #7d0633, 2em 2em 0 0 #7d0633, 0 3em 0 0.2em #7d0633, -2em 2em 0 0 #7d0633, -3em 0 0 -1em #7d0633, -2em -2em 0 -1em #7d0633;
+    }
+    62.5% {
+        box-shadow: 0 -3em 0 -1em #7d0633, 2em -2em 0 -1em #7d0633, 3em 0 0 -1em #7d0633, 2em 2em 0 -1em #7d0633, 0 3em 0 0 #7d0633, -2em 2em 0 0.2em #7d0633, -3em 0 0 0 #7d0633, -2em -2em 0 -1em #7d0633;
+    }
+    75% {
+        box-shadow: 0 -3em 0 -1em #7d0633, 2em -2em 0 -1em #7d0633, 3em 0 0 -1em #7d0633, 2em 2em 0 -1em #7d0633, 0 3em 0 -1em #7d0633, -2em 2em 0 0 #7d0633, -3em 0 0 0.2em #7d0633, -2em -2em 0 0 #7d0633;
+    }
+    87.5% {
+        box-shadow: 0 -3em 0 0 #7d0633, 2em -2em 0 -1em #7d0633, 3em 0 0 -1em #7d0633, 2em 2em 0 -1em #7d0633, 0 3em 0 -1em #7d0633, -2em 2em 0 0 #7d0633, -3em 0 0 0 #7d0633, -2em -2em 0 0.2em #7d0633;
+    }
+}

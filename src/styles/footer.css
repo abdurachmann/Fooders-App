@@ -1,0 +1,17 @@
+footer {
+    margin-top: 5%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #31112c;
+    padding: 15px;
+}
+
+.copyright {
+    font-size: 1.2em;
+    color: #fbdcc4;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}

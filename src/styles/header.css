@@ -1,0 +1,285 @@
+nav {
+    background-color: #7d0633;
+    padding: 5px 15%;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+nav ul li.menu-nav {
+    position: relative;
+    width: auto;
+    margin: 0 20px;
+    text-align: center;
+    order: 3;
+}
+
+nav ul li.menu-nav::after {
+    position: absolute;
+    content: '';
+    left: 15%;
+    bottom: 5px;
+    height: 2px;
+    width: 70%;
+    background-color: #fbdcc4;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+nav ul li.menu-nav:hover::after {
+    opacity: 1;
+    bottom: 8px;
+}
+
+nav ul li.brand {
+    flex: 1;
+    color: #fbdcc4;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    cursor: default;
+    user-select: none;
+    /* padding-left: 13%; */
+}
+
+nav ul li a {
+    color: #fbdcc4;
+    font-size: 18px;
+    text-decoration: none;
+    transition: .4s;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.menu-nav a {
+    padding: 0.8em;
+}
+
+nav ul li:hover a{
+    font-weight: bold;
+}
+
+nav ul li i {
+    font-size: 23px;
+}
+
+nav ul li.btn {
+    display: none;
+}
+
+nav ul li.btn button {
+    background-color: transparent;
+    border: none;
+}
+
+nav ul li.btn button i{
+    padding: 0.6em;
+    color: #fbdcc4;
+    cursor: pointer;
+}
+
+nav ul li.btn button i:hover {
+    color: #31112c;
+}
+
+nav ul li.btn button i::before {
+    padding: 0.55em;
+}
+
+nav ul li.btn.hide i::before {
+    content: '\f00d';
+    padding: 0.65em;
+}
+
+.jumbotron {
+    background-image: url('/images/hero-image_4-large.jpg');
+    /* background-image: url('../public/images/heros/hero-image_4.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 50vh;
+    background-color: #181816;
+    opacity: 0.7;
+}
+
+.text-hero {
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    padding: 8% 0;
+    letter-spacing: 2px;
+}
+
+.text-hero h1 {
+    font-size: 1.7em;
+    font-family: cursive;
+    margin-bottom: 5px;
+}
+
+.text-hero p {
+    font-size: 1.2em;
+    font-family: 'Gayathri', sans-serif;
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    nav ul li.brand {
+        padding-left: 20%;
+    }
+
+    .jumbotron {
+        background-image: url('/images/hero-image_4-small.jpg');
+        height: 70vh;
+    }
+
+    .wrapper {
+        height: 70vh;
+    }
+    
+    .text-hero {
+        padding: 60% 0;
+        margin: 0 40px;
+        letter-spacing: 1px;
+    }
+
+    .text-hero h1 {
+        font-size: 1.7em;
+        margin-bottom: 5px;
+    }
+
+    .text-hero p {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+    nav ul li.brand {
+        padding-left: 16%;
+    }
+
+    .jumbotron {
+        height: 70vh;
+    }
+
+    .wrapper {
+        height: 70vh;
+    }
+
+    .text-hero {
+        padding: 48% 0;
+        margin: 0 40px;
+        letter-spacing: 1px;
+    }
+    
+    .text-hero h1 {
+        font-size: 1.7em;
+        margin-bottom: 5px;
+    }
+
+    .text-hero p {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) {
+    nav ul li.brand {
+        padding-left: 13%;
+    }
+
+    .jumbotron {
+        height: 60vh;
+    }
+
+    .wrapper {
+        height: 60vh;
+    }
+
+    .text-hero {
+        padding: 40% 0;
+        margin: 0 40px;
+        letter-spacing: 1px;
+    }
+
+    .text-hero h1 {
+        font-size: 1.6em;
+        margin-bottom: 5px;
+    }
+
+    .text-hero p {
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+    .jumbotron {
+        height: 50vh;
+    }
+
+    .wrapper {
+        height: 50vh;
+    }
+
+    .text-hero {
+        padding: 15% 0;
+        letter-spacing: 1px;
+    }
+    
+    .text-hero h1 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .text-hero p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav ul li.brand {
+        text-align: center;
+    }
+
+    nav {
+        padding: 0 30px;
+    }
+
+    nav ul li.menu-nav {
+        width: 100%;
+        display: none;
+    }
+
+    nav ul li.menu-nav.open {
+        display: block;
+    }
+
+    nav ul li.menu-nav:hover {
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px #fbdcc4, inset 0 0 10px #fbdcc4;
+    }
+
+    nav ul li.menu-nav:hover::after {
+        opacity: 0;
+    }
+
+    nav ul li.btn {
+        display: block;
+    }
+}
